@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "allowUnreachableCode": false,
+    "moduleResolution": "node",
+    "lib": [ "es2015", "dom" ],
+    "outDir": "www/assets/scripts",
+    "typeRoots": [ "node_modules/@types" ],
+    "types": [
+       "node"
+    ]
+  },
+  "exclude": [
+    "dist",
+    "tmp",
+    "node_modules"
+  ]
+}

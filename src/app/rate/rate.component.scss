@@ -1,0 +1,48 @@
+@import '../../variables';
+
+:host {
+  display: block;
+  overflow: hidden;
+}
+.rate-wrap {
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px;
+  overflow: hidden;
+
+  > span {
+    float: left;
+    cursor: pointer;
+    padding-right: 5px;
+
+    > i {
+      font-size: 20px;
+      line-height: inherit;
+      color: #c6d1de;
+      transition: transform .15s;
+
+      &:hover {
+        transform: scale(1.15);
+      }
+
+      &.active{
+        color: $COLOR_YELLOW;
+      }
+    }
+  }
+
+  .label {
+    cursor: default;
+  }
+
+  &.readonly {
+    > span {
+      cursor: default;
+
+      > i:hover {
+        transform: none;
+      }
+    }
+  }
+
+}

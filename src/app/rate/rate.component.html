@@ -1,0 +1,22 @@
+<div
+  class="rate-wrap"
+  (mousedown)="$event.preventDefault()"
+  (selectstart)="$event.preventDefault()"
+  [class.readonly]="readonly"
+>
+  <span
+    *ngFor="let i of [1, 2, 3, 4, 5]"
+    (click)="readonly || click(i, $event)"
+    (mouseenter)="readonly || mouseenter(i)"
+    (mouseleave)="readonly || mouseleave(i)"
+  >
+    <i class="fa"
+      [ngClass]="{
+        'fa-star': i <= rate,
+        'fa-star-o': i > rate,
+        'active': i <= rate
+      }"
+    ></i>
+  </span>
+  <span *ngIf="showLabel" class="label">{{text[rate - 1]}}</span>
+</div>
