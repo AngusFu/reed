@@ -81,10 +81,8 @@ function addWatcherEvent(bs) {
             + chalk.green('Watching for changes...')
           );
 
-          if (bs.__initialised) {
-            bs.reload();
-          } else {
-          log(chalk.green('Launching browser-sync...'));
+          if (!bs.__initialised) {
+            log(chalk.green('Launching browser-sync...'));
             bsInit(bs);
           }
           break;
