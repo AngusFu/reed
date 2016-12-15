@@ -7,7 +7,11 @@
     "build:aot": "node ./scripts/build.aot.js",
     "start": "npm run build:jit"
   },
-  "keywords": ["angular 2", "rollup", "seed"],
+  "keywords": [
+    "angular 2",
+    "rollup",
+    "seed"
+  ],
   "author": "angusfu1126@qq.com",
   "license": "MIT",
   "dependencies": {
@@ -22,12 +26,8 @@
     "@angular/platform-server": "^2.3.0",
     "@angular/router": "~3.3.0",
     "angular-in-memory-web-api": "~0.1.17",
-    "core-js": "^2.4.1",
-    "reflect-metadata": "^0.1.8",
-    "rxjs": "5.0.0-rc.4",
-    "systemjs": "0.19.40",
-    "zone.js": "^0.7.2",
     "bluebird": "^3.4.6",
+    "core-js": "^2.4.1",
     "jsonwebtoken": "^7.1.9",
     "koa": "^2.0.0",
     "koa-bodyparser": "^3.2.0",
@@ -35,7 +35,11 @@
     "koa-router": "^7.0.1",
     "koa-send": "^3.2.0",
     "mysql2": "^1.1.2",
-    "request-promise": "^4.1.1"
+    "reflect-metadata": "^0.1.8",
+    "request-promise": "^4.1.1",
+    "rxjs": "5.0.0-rc.4",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.7.2"
   },
   "devDependencies": {
     "@types/node": "^6.0.46",
@@ -61,6 +65,7 @@
     "rollup-plugin-commonjs": "^5.0.5",
     "rollup-plugin-json": "^2.0.2",
     "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-progress": "^0.1.0",
     "rollup-plugin-sourcemaps": "^0.4.1",
     "rollup-plugin-typescript": "^0.8.1",
     "rollup-plugin-uglify": "^1.0.1",

@@ -7,6 +7,7 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
 import buble from 'rollup-plugin-buble';
+import progress from 'rollup-plugin-progress';
 
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import uglify from 'rollup-plugin-uglify';
@@ -25,14 +26,13 @@ const htmlminOpts = {
   removeComments: true,
 };
 
-const isProd = Array.from(process.argv).indexOf('--prod') > -1;
-
 const config =  {
   entry: 'temp/main.aot.ts',
   format: 'iife',
   dest: 'www/assets/scripts/bundle.aot.js',
   sourceMap: true,
   plugins: [
+    progress({ clearLine: true }),
     sourcemaps(),
     nodeResolve({
       jsnext: true,
