@@ -17,4 +17,3 @@ Use [System.js](http://plnkr.co/edit/HDnJrb3TvSAYgoyRFl2S) just for DEV?
 Or check [angular2-webpack-starter](https://github.com/AngularClass/angular2-webpack-starter)?
 
 Take a look at [angular2-rollup-starter](https://github.com/AngusFu/angular2-rollup-starter). To be honest, it'a a lot better than this.
-
