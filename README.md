@@ -5,7 +5,7 @@
 ## TODO
 
 <del>
-Reed got severe problem with rxjs when bundling all `@angular` modules as "vender". A solution is on the way to my mind. More investigation & experiments are needed. Hope it would get solved soon.
+Reed got severe problem with rxjs when bundling all `@angular` modules as "vendor". A solution is on the way to my mind. More investigation & experiments are needed. Hope it would get solved soon.
 </del>
 
 SEE: https://medium.com/@Wemlin/excellent-af7fd9354389#.3wts6xew5
