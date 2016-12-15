@@ -13,7 +13,8 @@ const config = Object.assign({}, commonConfig, {
     '@angular/platform-browser',
     '@angular/forms',
     '@angular/http',
-    '@angular/router'
+    '@angular/router',
+    'rxjs'
   ],
   globals: {
     '@angular/core': 'vendor.core',
@@ -22,7 +23,8 @@ const config = Object.assign({}, commonConfig, {
     '@angular/platform-browser-dynamic': 'vendor.platformBrowserDynamic',
     '@angular/router': 'vendor.router',
     '@angular/http': 'vendor.http',
-    '@angular/forms': 'vendor.forms'
+    '@angular/forms': 'vendor.forms',
+    'rxjs': 'vendor.rxjs'
   }
 });
 
