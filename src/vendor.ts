@@ -6,7 +6,6 @@ import * as common from '@angular/common';
 import * as forms from '@angular/forms';
 import * as http from '@angular/http';
 import * as router from '@angular/router';
-
 import * as rxjs from 'rxjs/Rx';
 
 export default {

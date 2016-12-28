@@ -6,7 +6,7 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import json from 'rollup-plugin-json';
 import buble from 'rollup-plugin-buble';
-import progress from 'rollup-plugin-progress';
+// import progress from 'rollup-plugin-progress';
 
 import sourcemaps from 'rollup-plugin-sourcemaps';
 import uglify from 'rollup-plugin-uglify';
@@ -29,7 +29,7 @@ const config =  {
   format: 'iife',
   sourceMap: true,
   plugins: [
-    progress({ clearLine: true }),
+    // progress({ clearLine: true }),
     sourcemaps(),
     // see https://github.com/ReactiveX/rxjs/issues/1954
     // also see https://github.com/ReactiveX/rxjs/pull/2019

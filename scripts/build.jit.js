@@ -28,7 +28,7 @@ build('polyfills');
 build('vendor');
 
 // check if watch if needed
-if (!readlineSync.keyInYN(chalk.blue(`Watching mode?[y/n]`))) {
+if (!readlineSync.keyInYN(chalk.blue(`Watching mode?`))) {
   print(chalk.yellow(`Start bundling...`));
   exec(`rollup -c ./scripts/rollup.config.development.js`);
   print(chalk.green(`Bundling DONE.`));
